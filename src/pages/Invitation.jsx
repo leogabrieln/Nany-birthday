@@ -42,7 +42,7 @@ export default function Invitation() {
           <img src={img('convite/star4.png')} alt="" className="sticker p-star c twinkle" />
 
           <div className="p-title">
-            <Ransom as="h1" text="Feliz Aniversário" delay={0.4} />
+            <Ransom as="h1" text="Happy Birthday" delay={0.4} />
             <Ransom text="nany" className="p-name" delay={1.1} />
           </div>
 
@@ -52,8 +52,7 @@ export default function Invitation() {
             <span className="hl">{event.note}</span>
           </div>
 
-          <img src={img('convite/hat.png')} alt="" className="sticker p-hat float-b" style={{ '--r': '-6deg' }} />
-          <motion.img src={nanyPics[2]} alt="Nany de óculos escuros" className="p-nany" initial={{ x: -80, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} viewport={{ once: true }} transition={{ type: 'spring', stiffness: 60, damping: 12 }} />
+          <motion.img src={img('nany/n4.png')} alt="Nany de óculos escuros" className="p-nany" initial={{ x: -80, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} viewport={{ once: true }} transition={{ type: 'spring', stiffness: 60, damping: 12 }} />
           <motion.img src={img('convite/puppy.png')} alt="" className="p-puppy" initial={{ y: 120, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} transition={{ type: 'spring', stiffness: 60, damping: 12, delay: 0.2 }} />
         </div>
       </section>

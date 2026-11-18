@@ -64,7 +64,7 @@ main { flex: 1; }
 .nav-link:hover { background: rgba(255,255,255,.1); color: #fff; }
 .nav-link.active { background: var(--chrome); color: var(--ink); font-weight: 500; }
 
-.footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; padding: 26px var(--gutter); font-family: var(--f-mono); font-size: 11px; letter-spacing: .14em; color: var(--silver-d); background: #04113a; border-top: 1px solid rgba(207,216,232,.18); }
+.footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 10px; padding: 26px var(--gutter); font-family: var(--f-mono); font-size: 11px; letter-spacing: .14em; color: var(--silver-d); background: #04113a; border-top: 1px solid rgba(207,216,232,.18); }
 .footer span { display: inline-flex; align-items: center; gap: 6px; }
 
 @media (max-width: 960px) {
@@ -72,6 +72,11 @@ main { flex: 1; }
   .nav-links { position: absolute; inset: 100% 0 auto 0; flex-direction: column; flex-wrap: nowrap; align-items: stretch; gap: 2px; padding: 12px var(--gutter) 20px; background: rgba(7,26,82,.97); border-bottom: 1px solid rgba(207,216,232,.25); transform: translateY(-8px); opacity: 0; pointer-events: none; transition: .22s; }
   .nav-links.is-open { transform: none; opacity: 1; pointer-events: auto; }
   .nav-link { padding: 13px 14px; font-size: 13px; }
+  .footer {
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
 }
 
 /* ── tipografia utilitária ── */
